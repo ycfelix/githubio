@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import myIcon from "../images/my_icon.png"
+import roboticsIcon from "../images/robotics.png"
+import hkustIcon from "../images/hkust.png"
 import {
   Button,
   Container,
@@ -26,21 +28,35 @@ const getWidth = () => {
   return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth;
 };
 
-/* eslint-disable react/no-multi-comp */
-/* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
- * such things.
- */
+const PersonalLinkIcon = () => (
+  <div>
+    <Button icon labelPosition='left'>
+      <Icon name='github' />
+      Github
+    </Button>
+    <Button icon labelPosition='left'>
+      linkedIn
+      <Icon name='linkedin' />
+    </Button>
+    <Button icon labelPosition='left'>
+      Blogger
+      <Icon name='blogger' />
+    </Button>
+  </div>
+)
+
+
 const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as="h1"
-      content="Passionate developer"
+      content="Software developer"
       inverted
       style={{
-        fontSize: mobile ? "2em" : "4em",
+        fontSize: mobile ? "2em" : "3em",
         fontWeight: "normal",
         marginBottom: 0,
-        marginTop: mobile ? "1.5em" : "3em",
+        marginTop: mobile ? "1.5em" : "2.4em",
       }}
     />
     <p
@@ -53,7 +69,6 @@ const HomepageHeading = ({ mobile }) => (
     </p>
     <Header
       as="h2"
-      content="Checkout some of my projects"
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
@@ -61,9 +76,14 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? "0.5em" : "1.5em",
       }}
     />
-    <Button primary size="huge">
-      GO <Icon name="right arrow" />
-    </Button>
+    <Header inverted>
+      <Button animated color="primary">
+        <Button.Content visible>Checkout my projects</Button.Content>
+        <Button.Content hidden>
+          <Icon name='arrow right' />
+        </Button.Content>
+      </Button>
+    </Header>
   </Container>
 );
 
@@ -102,7 +122,7 @@ class DesktopContainer extends Component {
             inverted
             textAlign="left"
             style={{
-              minHeight: 700,
+              minHeight: 600,
               padding: "1em 0em "
             }}
             vertical
@@ -126,12 +146,15 @@ class DesktopContainer extends Component {
             <Grid columns={2} stackable textAlign="center">
               
               <Grid.Row verticalAlign="middle">
-                <Grid.Column>
+                <Grid.Column textAlign="middle">
                   <HomepageHeading />
                 </Grid.Column>
                 <Grid.Column>
-                  <Header inverted>
+                  <Header>
                     <Image style={{'font-size':100}} avatar src={myIcon}/>
+                      <Header inverted>
+                        <PersonalLinkIcon/>
+                      </Header>
                   </Header>
                 </Grid.Column>
               </Grid.Row>
@@ -219,13 +242,37 @@ MobileContainer.propTypes = {
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer> {children} </DesktopContainer>
-    <MobileContainer> {children} </MobileContainer>
+    {/* <MobileContainer> {children} </MobileContainer> */}
   </div>
 );
 
 ResponsiveContainer.propTypes = {
   children: PropTypes.node,
 };
+
+
+const MyContactInfo = () => (
+  <div>
+  <List>
+    <List.Item>
+      <List.Icon name='users' />
+      <List.Content>Felix Yau</List.Content>
+    </List.Item>
+    <List.Item>
+      <List.Icon name='marker' />
+      <List.Content>Kwai Chung, Hong Kong</List.Content>
+    </List.Item>
+    <List.Item>
+      <List.Icon name='mail' />
+      <List.Content>
+        <a href='mailto:ycfelix7@gmail.com'>ycfelix7@gmail.com</a>
+      </List.Content>
+    </List.Item>
+  </List>
+  </div>
+)
+
+
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
@@ -244,103 +291,54 @@ const HomepageLayout = () => (
                 fontSize: "2em",
               }}
             >
-              Testing
+              About myself
             </Header>
             <p
               style={{
                 fontSize: "1.33em",
+                textAlign:"justify"
               }}
             >
-              Testing content
+              Hi there! This is Felix, a junior developer who is passionate about 
+              digital transformation & automation. I had been in HKUST studying computer science
+              with a minor in robotics. My area of interest includes mobile application, 
+              robotic process automation, computer vision & cloud technology.
+
             </p>
-            <Header
-              as="h3"
-              style={{
-                fontSize: "2em",
-              }}
-            >
-              Testing content
-            </Header>
             <p
               style={{
                 fontSize: "1.33em",
+                textAlign:"justify"
               }}
             >
-              Testing content
+              Throughout my university life, I joined quite a few
+              competitions and many of them gave me insights and 
+              valuable experience about team work, software development and my career.
+              Most important of all, I met a lot of friends, smart people and opportunities. 
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
             <Image
-              bordered
               rounded
               size="large"
-              src="/images/wireframe/white-image.png"
+              src={roboticsIcon}
             />
+            <Header/>
+              <Image
+                rounded
+                size="large"
+                src={hkustIcon}
+              />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign="center">
-            <Button size="huge"> Check it Out </Button>
+            <Button size="huge"> Go to my gallery </Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment
-      style={{
-        padding: "0em",
-      }}
-      vertical
-    >
-      <Grid celled="internally" columns="equal" stackable>
-        <Grid.Row textAlign="center">
-          <Grid.Column
-            style={{
-              paddingBottom: "5em",
-              paddingTop: "5em",
-            }}
-          >
-            <Header
-              as="h3"
-              style={{
-                fontSize: "2em",
-              }}
-            >
-              "Test content"
-            </Header>
-            <p
-              style={{
-                fontSize: "1.33em",
-              }}
-            >
-              That is what they all say about us
-            </p>
-          </Grid.Column>
-          <Grid.Column
-            style={{
-              paddingBottom: "5em",
-              paddingTop: "5em",
-            }}
-          >
-            <Header
-              as="h3"
-              style={{
-                fontSize: "2em",
-              }}
-            >
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p
-              style={{
-                fontSize: "1.33em",
-              }}
-            >
-              <Image avatar src="/images/avatar/large/nan.jpg" />
-              <b> Nan </b> Chief Fun Officer Acme Toys
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
+    {/*  */}
     <Segment
       style={{
         padding: "8em 0em",
@@ -352,20 +350,48 @@ const HomepageLayout = () => (
           as="h3"
           style={{
             fontSize: "2em",
+            textAlign:"center"
           }}
         >
-          Testing 3
+          Industrial Experience
+          
         </Header>
-        <p
-          style={{
-            fontSize: "1.33em",
-          }}
-        >
-          testing 4
-        </p>
-        <Button as="a" size="large">
-          Read More
+        <Grid columns={1} stackable textAlign="center">
+          <Grid.Row >
+            <Grid.Column width={12}>
+        <Header style={{
+            fontSize: "1.2em",
+            textAlign:"justify",
+            fontWeight: "normal"
+          }}>
+          <p>
+            I had a few internships during my time as an student. My first internship was 
+            in Weltronics Component Limited, a local IT solution provider that is specialized in
+            OCR technology. After that I went to Motorola Solution as an engineering assistant helping
+            system testing for ShaTin Central Line project. My most recent internship was in IBM GBS,
+            as a summer student intern that I assisted in the application support and maintenance project
+            for a local airline company.<br/><br/><br/>
+
+            With the experience in medium size IT solution providers and multinational IT 
+            consulting firm, I become more enthusiastic about developing software that can 
+            solve real-world problems. These internships not only provided me project handling 
+            experience but also shed light on my career path. If you are interested, please take
+            a look at me resume.
+          </p>
+        </Header>
+        </Grid.Column>
+        </Grid.Row>
+        </Grid>
+
+        <Header style={{
+            fontSize: "2em",
+            textAlign:"center"
+          }}>
+          <Button as="a" size="large">
+          To my resume
         </Button>
+        </Header>
+        
         <Divider
           as="h4"
           className="header"
@@ -375,7 +401,7 @@ const HomepageLayout = () => (
             textTransform: "uppercase",
           }}
         >
-          <a href="#test"> Case Studies </a>
+          <a href="#test"> Contact me </a>
         </Divider>
         <Header
           as="h3"
@@ -383,18 +409,20 @@ const HomepageLayout = () => (
             fontSize: "2em",
           }}
         >
-          Did We Tell You About Our Bananas ?
+          Open to collaboration on any projects
         </Header>
         <p
           style={{
+            textAlign:"justify",
             fontSize: "1.33em",
           }}
         >
-          testing 5
+          If you have an exciting project idea that would like 
+          a developer to casually help on, feel free to leave me a message or 
+          contact me by email. If you would like to share career opportunities 
+          you are welcome as well :-D 
         </p>
-        <Button as="a" size="large">
-          I 'm Still Quite Interested
-        </Button>
+        <MyContactInfo/>
       </Container>
     </Segment>
     <Segment
@@ -410,28 +438,20 @@ const HomepageLayout = () => (
             <Grid.Column width={3}>
               <Header inverted as="h4" content="About" />
               <List link inverted>
-                <List.Item as="a"> Sitemap </List.Item>
-                <List.Item as="a"> Contact Us </List.Item>
-                <List.Item as="a"> Test </List.Item>
+                <List.Item as="a"> Myself </List.Item>
+                <List.Item as="a"> Contact Me </List.Item>
+                <List.Item as="a"> Awards </List.Item>
                 <List.Item as="a"> Plans </List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Services" />
-              <List link inverted>
-                <List.Item as="a"> Pre - Order </List.Item>
-                <List.Item as="a"> FAQ </List.Item>
-                <List.Item as="a"> How To Access </List.Item>
-                <List.Item as="a"> Test </List.Item>
-              </List>
-            </Grid.Column>
+          
             <Grid.Column width={7}>
               <Header as="h4" inverted>
-                Footer Header
+                Disclaimer
               </Header>
               <p>
-                Extra space for a call to action inside the footer that could
-                help re - engage users.
+                Any project publicly released on my github is free to use for any purpose
+                 without the need to notify me.
               </p>
             </Grid.Column>
           </Grid.Row>
