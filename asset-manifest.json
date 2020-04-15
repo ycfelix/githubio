@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/ycfelix/static/js/main.de97f86f.chunk.js",
-    "main.js.map": "/ycfelix/static/js/main.de97f86f.chunk.js.map",
+    "main.js": "/ycfelix/static/js/main.c0d420a9.chunk.js",
+    "main.js.map": "/ycfelix/static/js/main.c0d420a9.chunk.js.map",
     "runtime-main.js": "/ycfelix/static/js/runtime-main.7033fc4f.js",
     "runtime-main.js.map": "/ycfelix/static/js/runtime-main.7033fc4f.js.map",
     "static/css/2.0ae50854.chunk.css": "/ycfelix/static/css/2.0ae50854.chunk.css",
     "static/js/2.b937a1e1.chunk.js": "/ycfelix/static/js/2.b937a1e1.chunk.js",
     "static/js/2.b937a1e1.chunk.js.map": "/ycfelix/static/js/2.b937a1e1.chunk.js.map",
     "index.html": "/ycfelix/index.html",
-    "precache-manifest.aa5d07d75c7e0afa5d71ea1563f51a8f.js": "/ycfelix/precache-manifest.aa5d07d75c7e0afa5d71ea1563f51a8f.js",
+    "precache-manifest.a9f369b2060eb35d7cc88cc768cbd770.js": "/ycfelix/precache-manifest.a9f369b2060eb35d7cc88cc768cbd770.js",
     "service-worker.js": "/ycfelix/service-worker.js",
     "static/css/2.0ae50854.chunk.css.map": "/ycfelix/static/css/2.0ae50854.chunk.css.map",
     "static/js/2.b937a1e1.chunk.js.LICENSE.txt": "/ycfelix/static/js/2.b937a1e1.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.7033fc4f.js",
     "static/css/2.0ae50854.chunk.css",
     "static/js/2.b937a1e1.chunk.js",
-    "static/js/main.de97f86f.chunk.js"
+    "static/js/main.c0d420a9.chunk.js"
   ]
 }
