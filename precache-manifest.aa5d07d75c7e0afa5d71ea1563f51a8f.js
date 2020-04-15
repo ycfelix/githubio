@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9205fd5f894130c5f7e6cf2f04350e6d",
+    "revision": "621262aaa530715285274d60b2e44503",
     "url": "/ycfelix/index.html"
   },
   {
-    "revision": "9ce12173262b716cb0a9",
+    "revision": "c966d68747a6b16c7a10",
     "url": "/ycfelix/static/css/2.0ae50854.chunk.css"
   },
   {
-    "revision": "9ce12173262b716cb0a9",
-    "url": "/ycfelix/static/js/2.441ef7ca.chunk.js"
+    "revision": "c966d68747a6b16c7a10",
+    "url": "/ycfelix/static/js/2.b937a1e1.chunk.js"
   },
   {
     "revision": "967c3aa677d48917bda81b3b2ff2693c",
-    "url": "/ycfelix/static/js/2.441ef7ca.chunk.js.LICENSE.txt"
+    "url": "/ycfelix/static/js/2.b937a1e1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9c73d0936cbf7818416",
-    "url": "/ycfelix/static/js/main.a0a27cb4.chunk.js"
+    "revision": "99326d32f2650518e1ac",
+    "url": "/ycfelix/static/js/main.de97f86f.chunk.js"
   },
   {
     "revision": "f108865ae1de381692cc",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ycfelix/static/media/flags.9c74e172.png"
   },
   {
+    "revision": "158008d4c5f12f4692d6ee73c1741094",
+    "url": "/ycfelix/static/media/hkust.158008d4.png"
+  },
+  {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
     "url": "/ycfelix/static/media/icons.0ab54153.woff2"
   },
@@ -68,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ycfelix/static/media/icons.faff9214.woff"
   },
   {
+    "revision": "67b368dca34ab08c527fc011b3427b3b",
+    "url": "/ycfelix/static/media/my_icon.67b368dc.png"
+  },
+  {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
     "url": "/ycfelix/static/media/outline-icons.701ae6ab.eot"
   },
@@ -86,5 +94,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/ycfelix/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "abbcb27ec25390f57baa5d36aab724c7",
+    "url": "/ycfelix/static/media/robotics.abbcb27e.png"
   }
 ]);
