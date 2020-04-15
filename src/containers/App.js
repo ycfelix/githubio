@@ -300,7 +300,8 @@ const HomepageLayout = () => (
               }}
             >
               Hi there! This is Felix, a junior developer who is passionate about 
-              digital transformation & automation. I had been in HKUST studying computer science
+              digital transformation & automation. My undergrad was in HKUST
+              majoring in computer science
               with a minor in robotics. My area of interest includes mobile application, 
               robotic process automation, computer vision & cloud technology.
 
@@ -311,10 +312,10 @@ const HomepageLayout = () => (
                 textAlign:"justify"
               }}
             >
-              Throughout my university life, I joined quite a few
-              competitions and many of them gave me insights and 
-              valuable experience about team work, software development and my career.
-              Most important of all, I met a lot of friends, smart people and opportunities. 
+              Throughout my university life, I met a lot of friends and smart people
+              in competitions that I participated in, 
+              and many of them gave me insights and 
+              experience about communication, team works & technical skills.
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
@@ -333,7 +334,7 @@ const HomepageLayout = () => (
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign="center">
-            <Button size="huge"> Go to my gallery </Button>
+            <Button size="huge"> To my gallery </Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -365,18 +366,14 @@ const HomepageLayout = () => (
             fontWeight: "normal"
           }}>
           <p>
-            I had a few internships during my time as an student. My first internship was 
-            in Weltronics Component Limited, a local IT solution provider that is specialized in
-            OCR technology. After that I went to Motorola Solution as an engineering assistant helping
-            system testing for ShaTin Central Line project. My most recent internship was in IBM GBS,
-            as a summer student intern that I assisted in the application support and maintenance project
-            for a local airline company.<br/><br/><br/>
+            I had a few internships during my time as an student, in
+            local IT solution providers & multinational IT consulting company.
+            They were Weltronics Component Limited, Motorola Solutions and IBM.
+            <br/><br/><br/>
 
-            With the experience in medium size IT solution providers and multinational IT 
-            consulting firm, I become more enthusiastic about developing software that can 
-            solve real-world problems. These internships not only provided me project handling 
-            experience but also shed light on my career path. If you are interested, please take
-            a look at me resume.
+            These internships not only provided me project handling 
+            experience but also shed light on my career path. If you are interested
+            in some of my internship experience, please take a look at me resume.
           </p>
         </Header>
         </Grid.Column>
