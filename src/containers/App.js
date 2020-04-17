@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
-import React, { Component } from "react";
+import React,{ useState, Component } from "react";
 import myIcon from "../images/my_icon.png"
 import roboticsIcon from "../images/robotics.png"
 import hkustIcon from "../images/hkust.png"
+import Alert from 'react-bootstrap/Alert';
+
 import {
   Button,
   Container,
@@ -45,9 +47,26 @@ const PersonalLinkIcon = () => (
   </div>
 )
 
+function AlertDismissible() {
+  const [show, setShow] = useState(true);
+
+  if (show) {
+    return (
+      <Alert variant="danger" onClose={() => setShow(false)} dismissible>
+        <Alert.Heading>This website is under construction</Alert.Heading>
+        <p>
+          Maybe come back later to look at other pages :D
+        </p>
+      </Alert>
+    );
+  }
+  return <Button onClick={() => setShow(true)}>Don't click</Button>;
+}
+
 
 const HomepageHeading = ({ mobile }) => (
   <Container text>
+    <AlertDismissible/>
     <Header
       as="h1"
       content="Software developer"
@@ -242,7 +261,7 @@ MobileContainer.propTypes = {
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer> {children} </DesktopContainer>
-    {/* <MobileContainer> {children} </MobileContainer> */}
+    <MobileContainer> {children} </MobileContainer>
   </div>
 );
 
@@ -315,7 +334,7 @@ const HomepageLayout = () => (
               Throughout my university life, I met a lot of friends and smart people
               in competitions that I participated in, 
               and many of them gave me insights and 
-              experience about communication, team works & technical skills.
+              experience about communication, team work & technical skills.
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
@@ -366,7 +385,7 @@ const HomepageLayout = () => (
             fontWeight: "normal"
           }}>
           <p>
-            I had a few internships during my time as an student, in
+            I had a few internships during my time as a student, in
             local IT solution providers & multinational IT consulting company.
             They were Weltronics Component Limited, Motorola Solutions and IBM.
             <br/><br/><br/>
