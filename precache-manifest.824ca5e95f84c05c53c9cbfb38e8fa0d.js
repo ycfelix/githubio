@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9b869cc4fed9d88923b32a334fb89ef2",
+    "revision": "4a4a6eb229b6775a69bb058e68f2f980",
     "url": "/ycfelix/index.html"
   },
   {
-    "revision": "c966d68747a6b16c7a10",
-    "url": "/ycfelix/static/css/2.0ae50854.chunk.css"
+    "revision": "ea40d60b283e702fc5f6",
+    "url": "/ycfelix/static/css/2.dbf5b303.chunk.css"
   },
   {
-    "revision": "c966d68747a6b16c7a10",
-    "url": "/ycfelix/static/js/2.b937a1e1.chunk.js"
+    "revision": "c8b459749f80a173134c",
+    "url": "/ycfelix/static/css/main.3d7f50e5.chunk.css"
   },
   {
-    "revision": "967c3aa677d48917bda81b3b2ff2693c",
-    "url": "/ycfelix/static/js/2.b937a1e1.chunk.js.LICENSE.txt"
+    "revision": "ea40d60b283e702fc5f6",
+    "url": "/ycfelix/static/js/2.00337a24.chunk.js"
   },
   {
-    "revision": "ca90496d3d11a6112852",
-    "url": "/ycfelix/static/js/main.16df008e.chunk.js"
+    "revision": "b5cdf522d2f4104f2ea6082e767a0dd2",
+    "url": "/ycfelix/static/js/2.00337a24.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "c8b459749f80a173134c",
+    "url": "/ycfelix/static/js/main.def4d3c6.chunk.js"
   },
   {
     "revision": "f108865ae1de381692cc",

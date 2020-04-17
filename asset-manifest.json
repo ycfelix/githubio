@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.js": "/ycfelix/static/js/main.16df008e.chunk.js",
-    "main.js.map": "/ycfelix/static/js/main.16df008e.chunk.js.map",
+    "main.css": "/ycfelix/static/css/main.3d7f50e5.chunk.css",
+    "main.js": "/ycfelix/static/js/main.def4d3c6.chunk.js",
+    "main.js.map": "/ycfelix/static/js/main.def4d3c6.chunk.js.map",
     "runtime-main.js": "/ycfelix/static/js/runtime-main.7033fc4f.js",
     "runtime-main.js.map": "/ycfelix/static/js/runtime-main.7033fc4f.js.map",
-    "static/css/2.0ae50854.chunk.css": "/ycfelix/static/css/2.0ae50854.chunk.css",
-    "static/js/2.b937a1e1.chunk.js": "/ycfelix/static/js/2.b937a1e1.chunk.js",
-    "static/js/2.b937a1e1.chunk.js.map": "/ycfelix/static/js/2.b937a1e1.chunk.js.map",
+    "static/css/2.dbf5b303.chunk.css": "/ycfelix/static/css/2.dbf5b303.chunk.css",
+    "static/js/2.00337a24.chunk.js": "/ycfelix/static/js/2.00337a24.chunk.js",
+    "static/js/2.00337a24.chunk.js.map": "/ycfelix/static/js/2.00337a24.chunk.js.map",
     "index.html": "/ycfelix/index.html",
-    "precache-manifest.05ce2fe5ccee39c558c98a99c2ba891e.js": "/ycfelix/precache-manifest.05ce2fe5ccee39c558c98a99c2ba891e.js",
+    "precache-manifest.824ca5e95f84c05c53c9cbfb38e8fa0d.js": "/ycfelix/precache-manifest.824ca5e95f84c05c53c9cbfb38e8fa0d.js",
     "service-worker.js": "/ycfelix/service-worker.js",
-    "static/css/2.0ae50854.chunk.css.map": "/ycfelix/static/css/2.0ae50854.chunk.css.map",
-    "static/js/2.b937a1e1.chunk.js.LICENSE.txt": "/ycfelix/static/js/2.b937a1e1.chunk.js.LICENSE.txt",
+    "static/css/2.dbf5b303.chunk.css.map": "/ycfelix/static/css/2.dbf5b303.chunk.css.map",
+    "static/css/main.3d7f50e5.chunk.css.map": "/ycfelix/static/css/main.3d7f50e5.chunk.css.map",
+    "static/js/2.00337a24.chunk.js.LICENSE.txt": "/ycfelix/static/js/2.00337a24.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/ycfelix/static/media/outline-icons.ef60a4f6.woff",
     "static/media/hkust.png": "/ycfelix/static/media/hkust.158008d4.png",
     "static/media/my_icon.png": "/ycfelix/static/media/my_icon.67b368dc.png",
@@ -19,8 +21,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7033fc4f.js",
-    "static/css/2.0ae50854.chunk.css",
-    "static/js/2.b937a1e1.chunk.js",
-    "static/js/main.16df008e.chunk.js"
+    "static/css/2.dbf5b303.chunk.css",
+    "static/js/2.00337a24.chunk.js",
+    "static/css/main.3d7f50e5.chunk.css",
+    "static/js/main.def4d3c6.chunk.js"
   ]
 }
